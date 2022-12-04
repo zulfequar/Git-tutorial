@@ -37,6 +37,10 @@ touch index.html
 Get the current status of the repository:
 git status
 
+Show the current status of the repository in short:
+git status -s
+
+
 Add a single file to staging area:
 git add index.html
 
