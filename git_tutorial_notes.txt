@@ -79,7 +79,7 @@ git diff --staged
 Directly commit all files without staging them:
 git commit -a -m "Feature: Added new files and directly commited without staging."
 
-Remove file from the working tree and from the index:
+Remove file from the working tree and from the index (i.e. local file is also deleted):
 git rm waste.html
 
 Move a committed file to untracked area (file is first moved to staging area then deleted from there and moved to untracked area):
