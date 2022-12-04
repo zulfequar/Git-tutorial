@@ -61,7 +61,7 @@ git chechout --force
 Show all commits log:
 git log
 
-Show last 1 commit (use Perl Regexp):
+Show last 1 commit with changes:
 git log -p -1
 Hint: Press 'q' for quitting.
 
@@ -79,7 +79,7 @@ git diff --staged
 Directly commit all files without staging them:
 git commit -a -m "Feature: Added new files and directly commited without staging."
 
-Delete a file from current directory:
+Remove file from the working tree and from the index:
 git rm waste.html
 
 Move a committed file to untracked area (file is first moved to staging area then deleted from there and moved to untracked area):
