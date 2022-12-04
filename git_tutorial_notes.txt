@@ -88,3 +88,9 @@ git rm waste.html
 
 Move a committed file to untracked area (file is first moved to staging area then deleted from there and moved to untracked area):
 git rm --cached waste.html
+
+Ignore some files and don't track them:
+Create '.gitignore' file and list the files to be ignored.
+Add '*.log' to ingore all files with .log extension.
+Add '<directory-name>/' to ingnore the directory and its contents.
+
