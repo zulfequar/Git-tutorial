@@ -82,5 +82,5 @@ git commit -a -m "Feature: Added new files and directly commited without staging
 Delete a file from current directory:
 git rm waste.html
 
-Delete a staged file:
-git rm --chached waste.html
+Move a committed file to untracked area (file is first moved to staging area then deleted from there and moved to untracked area):
+git rm --cached waste.html
