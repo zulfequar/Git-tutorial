@@ -1,7 +1,7 @@
 # Git-tutorial
 Learning Git and GitHub with Harry on his YouTube channel CodeWithHarry.
 
-<h1>Git Commands</h1>
+<h3>Git Commands</h3>
 <hr />
 
 <h6>1. Clear the console:</h6>
