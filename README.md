@@ -1,174 +1,185 @@
 # Git-tutorial
 Learning Git and GitHub with Harry on his YouTube channel CodeWithHarry.
 
-Git Commands
--------------
-Clear the console:
-clear
+<h1>Git Commands</h1>
+<hr />
 
-Logout from console:
-logout
-exit
+<h6>1. Clear the console:</h6>
+<pre>clear</pre>
 
-Show the name of the Git user from Git configuration:
-git config --global user.name
+<h6>2. Logout from console:</h6>
+<pre>logout
+or
+exit</pre>
 
-Set the name of the Git user in Git configuration:
-git config --global user.name Zulfequar Ali
+<h6>3. Show the name of the Git user from Git configuration:</h6>
+<pre>git config --global user.name</pre>
 
-Show the email of the Git user from Git configuration:
-git config --global user.email
+<h6>4. Set the name of the Git user in Git configuration:</h6>
+<pre>git config --global user.name Zulfequar Ali</pre>
 
-Set the email of the Git user in Git configuration:
-git config --global user.email develperzull@gmail.com
+<h6>5. Show the email of the Git user from Git configuration:</h6>
+<pre>git config --global user.email</pre>
 
-Open VS Code with the current directory open:
-code .
+<h6>6. Set the email of the Git user in Git configuration:</h6>
+<pre>git config --global user.email develperzull@gmail.com</pre>
 
-Initialize a Git repository in the current directory:
-git init
+<h6>7. Open VS Code with the current directory open:</h6>
+<pre>code .</pre>
 
-Show all the sub direcories in the current directory:
-ls -lart
+<h6>8. Initialize a Git repository in the current directory:</h6>
+<pre>git init</pre>
 
-List all files in the current directory (using Unix command):
-ls
+<h6>9. Show all the sub direcories in the current directory:</h6>
+<pre>ls -lart</pre>
 
-Create a file in the current directory:
-touch index.html
+<h6>10.List all files in the current directory (using Unix command):</h6>
+<pre>ls</pre>
 
-Get the current status of the repository:
-git status
+<h6>11.Create a file in the current directory:</h6>
+<pre>touch index.html</pre>
 
-Show the current status of the repository in short:
-git status -s
+<h6>12.Get the current status of the repository:</h6>
+<pre>git status</pre>
+
+<h6>13. Show the current status of the repository in short:</h6>
+<pre>git status -s</pre>
 
 
-Add a single file to staging area:
-git add index.html
+<h6>14. Add a single file to staging area:</h6>
+<pre>git add index.html</pre>
 
-Add mulitple files to staging area:
-git add index.html about.html
+<h6>15. Add mulitple files to staging area:</h6>
+<pre>git add index.html about.html</pre>
 
-Add all files to staging area:
-git add --all
+<h6>16. Add all files to staging area:</h6>
+<pre>git add --all
+or
 git add -A
-git add .
+or
+git add .</pre>
 
-Commit staged files:
-git commit -m "Feature: Added a nav bar"
+<h6>17. Commit staged files:</h6>
+<pre>git commit -m "Feature: Added a nav bar"</pre>
 
-For a single, file restore changes from the last commit:
-git checkout index.html
+<h6>18. For a single, file restore changes from the last commit:</h6>
+<pre>git checkout index.html</pre>
 
-For all files, restore changes from the last commit:
-git checkout -f
-git checkout --force
+<h6>19. For all files, restore changes from the last commit:</h6>
+<pre>git checkout -f
+or
+git checkout --force</pre>
 
-Show all commits log:
-git log
+<h6>20. Show all commits log:</h6>
+<pre>git log</pre>
 
-Show last 1 commit with changes:
-git log -p -1
-Hint: Press 'q' for quitting.
+<h6>21. Show last 1 commit with changes:</h6>
+<pre>git log -p -1
+Hint: Press 'q' for quitting.</pre>
 
-Show last 1 commit:
-git log -1
+<h6>22. Show last 1 commit:</h6>
+<pre>git log -1
+or
 git log -n 1
-git log --max-count=1
+or
+git log --max-count=1</pre>
 
-Show differences between working tree files and staged files:
-git diff
+<h6>23. Show differences between working tree files and staged files:</h6>
+<pre>git diff</pre>
 
-Show differences between staged files and last committed files:
-git diff --staged
+<h6>24. Show differences between staged files and last committed files:</h6>
+<pre>git diff --staged</pre>
 
-Directly commit all files without staging them:
-git commit -a -m "Feature: Added new files and directly commited without staging."
+<h6>25. Directly commit all files without staging them:</h6>
+<pre>git commit -a -m "Feature: Added new files and directly commited without staging."</pre>
 
-Remove file from the working tree and from the index (i.e. local file is also deleted):
-git rm waste.html
+<h6>26. Remove file from the working tree and from the index (i.e. local file is also deleted):</h6>
+<pre>git rm waste.html</pre>
 
-Move a staged or committed file to untracked area (file is first moved to staging area then deleted from there and moved to untracked area):
-git rm --cached waste.html
+<h6>27. Move a staged or committed file to untracked area (file is first moved to staging area then deleted from there and moved to untracked area):</h6>
+<pre>git rm --cached waste.html</pre>
 
-Ignore some files and don't track them:
-Create '.gitignore' file and list the files to be ignored.
+<h6>28. Ignore some files and don't track them:</h6>
+<pre>Create '.gitignore' file in the root directory of the repository and list out the filenames to be ignored.
 Add '*.log' to the list to ingore all files with .log extension.
-Add '<directory_name>/' to the list to ingnore the directory and its contents.
-Add '<file_path>' to the list ingore a file at a specific folder.
+Add '&lt;directory_name&gt;/' to the list to ingnore the directory and its contents.
+Add '&lt;file_path&gt;' to the list ingore a file at a specific folder.</pre>
 
-Show all branches:
-git branch
+<h6>29. Show all branches:</h6>
+<pre>git branch</pre>
 
-Create a branch from current branch:
-git branch <branch_name>
+<h6>30. Create a branch from current branch:</h6>
+<pre>git branch &lt;branch_name&gt;</pre>
 
-Switch to a branch:
-git checkout <branch_name>
+<h6>31. Switch to a branch:</h6>
+<pre>git checkout &lt;branch_name&gt;</pre>
 
-Create a new branch and switch to it as well:
-git checkout -b <branch_name>
+<h6>32. Create a new branch and switch to it as well:</h6>
+<pre>git checkout -b &lt;branch_name&gt;</pre>
 
-Merge a branch to current branch:
-git merge <branch_name>
+<h6>33. Merge a branch to current branch:</h6>
+<pre>git merge &lt;branch_name&gt;</pre>
 
-Delete a branch:
-git branch -d <branch_name>
-git branch -D <branch_name>
+<h6>34. Delete a branch:</h6>
+<pre>git branch -d &lt;branch_name&gt;
+or
+git branch -D &lt;branch_name&gt;</pre>
 
-Add a remote repository (remote):
-git remote add <remote_name> <repository_url>
+<h6>35. Add a remote repository (remote):</h6>
+<pre>git remote add &lt;remote_name&gt; &lt;repository_url&gt;</pre>
 
-Show all remotes:
-git remote
+<h6>36. Show all remotes:</h6>
+<pre>git remote</pre>
 
-Show romtes with their URLs:
-git remote -v
-git remote -verbose
+<h6>37. Show romtes with their URLs:</h6>
+<pre>git remote -v
+or
+git remote -verbose</pre>
 
-Push a (local) branch to a remote:
-git push <remote_name> <branch_name>
+<h6>38. Push a (local) branch to a remote:</h6>
+<pre>git push &lt;remote_name&gt; &lt;branch_name&gt;</pre>
 
-Generate a new SSH key:
-ssh-keygen -t ed25519 -C "your_email@example.com"
-or,
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+<h6>39. Generate a new SSH key:</h6>
+<pre>ssh-keygen -t ed25519 -C "your_email@example.com"
+or
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</pre>
 
-Start the ssh-agent in the background:
-eval "$(ssh-agent -s)"
+<h6>40. Start the ssh-agent in the background:</h6>
+<pre>eval "$(ssh-agent -s)"</pre>
 
-Add SSH key to ssh-agent:
-ssh-add ~/.ssh/id_ed25519
-[Note: If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_ed25519 in the command with the name of your private key file.]
-or,
-ssh-add <ssh_key_file_address>
-or,
-ssh-add <local_repository_root_directory_address/ssh_key_filename>
+<h6>41. Add SSH key to ssh-agent:</h6>
+<pre>ssh-add ~/.ssh/id_ed25519
+[Note: If you created your key with a different name, or if you are adding an existing key that
+has a different name, replace id_ed25519 in the command with the name of your private key file.]
+or
+ssh-add &lt;ssh_key_file_address&gt;
+or
+ssh-add &lt;local_repository_root_directory_address/ssh_key_filename&gt;</pre>
 
-Copy the SSH public key contents to your clipboard:
-clip < <ssh_public_key_file_address>
+<h6>42. Copy the SSH public key contents to your clipboard:</h6>
+<pre>clip &lt; &lt;ssh_public_key_file_address&gt;</pre>
 
-Print the SSH public key contents on the terminal:
-cat <ssh_public_key_file_address>
+<h6>43. Print the SSH public key contents on the terminal:</h6>
+<pre>cat &lt;ssh_public_key_file_address&gt;</pre>
 
-Show the current HTTPS of SSH URLs for a remote:
-git remote get-url <remote_name>
-git remote get-url --all <remote_name>
+<h6>44. Show the current HTTPS of SSH URLs for a remote:</h6>
+<pre>git remote get-url &lt;remote_name&gt;
+or
+git remote get-url --all &lt;remote_name&gt;</pre>
 
-Change the URL for a remote:
-git remote set-url <remote_name> <new_url>
+<h6>45. Change the URL for a remote:</h6>
+<pre>git remote set-url &lt;remote_name&gt; &lt;new_url&gt;</pre>
 
-Update the remote by pushing/uploading the local files of a branch and add the upstream (tracking) reference as well:
-git push -u <remote_name> <branch_name>
-or,
-git push --set-upstream <remote_name> <branch_name>
+<h6>46. Update the remote by pushing/uploading the local files of a branch and add the upstream (tracking) reference as well:</h6>
+<pre>git push -u &lt;remote_name&gt; &lt;branch_name&gt;
+or
+git push --set-upstream &lt;remote_name&gt; &lt;branch_name&gt;</pre>
 
-Update the remote by pushing local files from the current branch (last pushed branch using -u or --set-upstream option):
-git push
+<h6>47. Update the remote by pushing local files from the current branch (last pushed branch using -u or --set-upstream option):</h6>
+<pre>git push</pre>
 
-Clone/copy a public repository:
-git clone <repository_url>
+<h6>48. Clone/copy a public repository:</h6>
+<pre>git clone &lt;repository_url&gt;</pre>
 
-Clone a public repository into a new directory:
-git clone <repository_url> <new_dictory_name>
+<h6>49. Clone a public repository into a new directory:</h6>
+<pre>git clone &lt;repository_url&gt; &lt;new_dictory_name&gt;</pre>
