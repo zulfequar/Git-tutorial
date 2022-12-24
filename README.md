@@ -147,7 +147,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</pre>
 <h6>40. Start the ssh-agent in the background:</h6>
 <pre>eval "$(ssh-agent -s)"</pre>
 
-<h6>41. Add SSH key to ssh-agent:</h6>
+<h6>41. Add your SSH private key to ssh-agent:</h6>
 <pre>ssh-add ~/.ssh/id_ed25519
 [Note: If you created your key with a different name, or if you are adding an existing key that
 has a different name, replace id_ed25519 in the command with the name of your private key file.]
@@ -157,29 +157,46 @@ or
 ssh-add &lt;local_repository_root_directory_address/ssh_key_filename&gt;</pre>
 
 <h6>42. Copy the SSH public key contents to your clipboard:</h6>
-<pre>clip &lt; &lt;ssh_public_key_file_address&gt;</pre>
+<pre>clip &lt; ~/.ssh/id_ed25519.pub
+or
+clip &lt; &lt;ssh_public_key_file_address&gt;</pre>
 
 <h6>43. Print the SSH public key contents on the terminal:</h6>
-<pre>cat &lt;ssh_public_key_file_address&gt;</pre>
+<pre>cat ~/.ssh/id_ed25519.pub
+or cat &lt;ssh_public_key_file_address&gt;</pre>
 
-<h6>44. Show the current HTTPS of SSH URLs for a remote:</h6>
+<h6>44. Test your SSH connection (attempts to ssh to GitHub):</h6>
+<pre>ssh -T git@github.com
+
+You may see a warning like this:
+&gt; The authenticity of host 'github.com (IP ADDRESS)' can't be established.
+&gt; RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+&gt; Are you sure you want to continue connecting (yes/no)?
+
+Verify that the fingerprint in the message you see matches GitHub's public key fingerprint.
+If it does, then type yes:
+&gt; Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
+
+Verify that the resulting message contains your username.</pre>
+
+<h6>45. Show the current HTTPS of SSH URLs for a remote:</h6>
 <pre>git remote get-url &lt;remote_name&gt;
 or
 git remote get-url --all &lt;remote_name&gt;</pre>
 
-<h6>45. Change the URL for a remote:</h6>
+<h6>46. Change the URL for a remote:</h6>
 <pre>git remote set-url &lt;remote_name&gt; &lt;new_url&gt;</pre>
 
-<h6>46. Update the remote by pushing/uploading the local files of a branch and add the upstream (tracking) reference as well:</h6>
+<h6>47. Update the remote by pushing/uploading the local files of a branch and add the upstream (tracking) reference as well:</h6>
 <pre>git push -u &lt;remote_name&gt; &lt;branch_name&gt;
 or
 git push --set-upstream &lt;remote_name&gt; &lt;branch_name&gt;</pre>
 
-<h6>47. Update the remote by pushing local files from the current branch (last pushed branch using -u or --set-upstream option):</h6>
+<h6>48. Update the remote by pushing local files from the current branch (last pushed branch using -u or --set-upstream option):</h6>
 <pre>git push</pre>
 
-<h6>48. Clone/copy a public repository:</h6>
+<h6>49. Clone/copy a public repository:</h6>
 <pre>git clone &lt;repository_url&gt;</pre>
 
-<h6>49. Clone a public repository into a new directory:</h6>
+<h6>50. Clone a public repository into a new directory:</h6>
 <pre>git clone &lt;repository_url&gt; &lt;new_dictory_name&gt;</pre>
