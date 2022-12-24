@@ -163,7 +163,8 @@ clip &lt; &lt;ssh_public_key_file_address&gt;</pre>
 
 <h6>43. Print the SSH public key contents on the terminal:</h6>
 <pre>cat ~/.ssh/id_ed25519.pub
-or cat &lt;ssh_public_key_file_address&gt;</pre>
+or
+cat &lt;ssh_public_key_file_address&gt;</pre>
 
 <h6>44. Test your SSH connection (attempts to ssh to GitHub):</h6>
 <pre>ssh -T git@github.com
