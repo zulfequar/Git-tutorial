@@ -33,13 +33,13 @@ exit</pre>
 <h6>9. Show all the sub direcories in the current directory:</h6>
 <pre>ls -lart</pre>
 
-<h6>10.List all files in the current directory (using Unix command):</h6>
+<h6>10. List all files in the current directory (using Unix command):</h6>
 <pre>ls</pre>
 
-<h6>11.Create a file in the current directory:</h6>
+<h6>11. Create a file in the current directory:</h6>
 <pre>touch index.html</pre>
 
-<h6>12.Get the current status of the repository:</h6>
+<h6>12. Get the current status of the repository:</h6>
 <pre>git status</pre>
 
 <h6>13. Show the current status of the repository in short:</h6>
