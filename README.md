@@ -201,3 +201,7 @@ git push --set-upstream &lt;remote_name&gt; &lt;branch_name&gt;</pre>
 
 <h6>50. Clone a public repository into a new directory:</h6>
 <pre>git clone &lt;repository_url&gt; &lt;new_dictory_name&gt;</pre>
+
+<h6>51. Set your current local branch to exactly match the remote branch can be done in two steps:</h6>
+<pre>git fetch origin
+git reset --hard origin/master</pre>
